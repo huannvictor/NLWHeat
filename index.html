@@ -30,29 +30,23 @@
           huannvictor
         </a>
         <p>An instructor focused on helping pople start programming for web</p>
-        <ul>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCgxRqPYLAHiOFwsaaeZdaVg"
-              target="_blank"
-            >
-              <img
-                src="images/youtube.svg"
-                alt="link para o canal no Youtube"
-              />
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://www.youtube.com/channel/UCgxRqPYLAHiOFwsaaeZdaVg" target="_blank" >
+              <img src="images/youtube.svg" alt="link para o canal no Youtube" />
             </a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://www.instagram.com/huannvictor" target="_blank">
               <img src="images/instagram.svg" alt="link para o instagram" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="https://www.facebook.com/huannvictor" target="_blank">
               <img src="images/facebook.svg" alt="link para o facebook" />
             </a>
           </li>
-          <li>
+          <li class="twitter">
             <a href="https://www.twitter.com/huannvictor" target="_blank">
               <img src="images/twitter.svg" alt="link para o twitter" />
             </a>
@@ -63,14 +57,20 @@
 
     <script>
       const userSocialMedias = {
-        github: 'huannvictor',
-        youtube: 'UCgxRqPYLAHiOFwsaaeZdaVg',
-        facebook: 'huannvictor',
+        github: 'maykbrito',
+        youtube: 'channel/UCgxRqPYLAHiOFwsaaeZdaVg',
+        facebook: 'maykbrito',
         instagram: 'huannvictor',
-        twitter: 'huannvictor'
+        twitter: 'maykbrito'
       }
 
-      function changeSocialMediaLinks() {}
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const site = li.getAttribute('class')
+          const social = li.children[0].href = `https://www.${site}.com/${userSocialMedias[site]}`
+          console.log(social)
+        }
+      }
       changeSocialMediaLinks()
     </script>
   </body>
