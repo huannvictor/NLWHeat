@@ -82,7 +82,7 @@
     `i++` → cria o incremento que será atribuido a cada repetição a fim de atingir a condição como satisfatória.  
 
   Podemos usar como referência uma tag com um id dentro do código HTML como contador da função ```for()```.  
-  Lembrando que o JS consegue identificar [id's](##Acessando-id).
+  Lembrando que o JS consegue identificar [id's](##acessando-id).
 
   ```JS
     for(let contItems of idName.children){
