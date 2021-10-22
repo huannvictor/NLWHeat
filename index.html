@@ -19,35 +19,41 @@
           <span>
             <img src="images/build.svg" alt="selo Rocketseat" />
           </span>
-          <img
+          <img id="userPhoto"
             src="https://lorempixel.com/185/185/people/"
             alt="foto pessoal"
           />
         </div>
-        <h1 id="userName">Huann Almeida</h1>
-        <a href="https://github.com/huannvictor" target="_blank">
+        <h1 id="userName">Nome</h1>
+        <a id="userGitHubLink" href="" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
-          huannvictor
+          <span id="userLogin">gitHub User</span>
         </a>
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">An instructor focused on helping pople start programming for web</p>
         <ul id="socialLinks">
           <li class="youtube">
-            <a href="https://www.youtube.com/channel/UCgxRqPYLAHiOFwsaaeZdaVg" target="_blank" >
-              <img src="images/youtube.svg" alt="link para o canal no Youtube" />
+            <a
+              href=""
+              target="_blank"
+            >
+              <img
+                src="images/youtube.svg"
+                alt="link para o canal no Youtube"
+              />
             </a>
           </li>
           <li class="instagram">
-            <a href="https://www.instagram.com/huannvictor" target="_blank">
+            <a href="" target="_blank">
               <img src="images/instagram.svg" alt="link para o instagram" />
             </a>
           </li>
           <li class="facebook">
-            <a href="https://www.facebook.com/huannvictor" target="_blank">
+            <a href="" target="_blank">
               <img src="images/facebook.svg" alt="link para o facebook" />
             </a>
           </li>
           <li class="twitter">
-            <a href="https://www.twitter.com/huannvictor" target="_blank">
+            <a href="" target="_blank">
               <img src="images/twitter.svg" alt="link para o twitter" />
             </a>
           </li>
@@ -55,23 +61,6 @@
       </div>
     </main>
 
-    <script>
-      const userSocialMedias = {
-        github: 'maykbrito',
-        youtube: 'channel/UCgxRqPYLAHiOFwsaaeZdaVg',
-        facebook: 'maykbrito',
-        instagram: 'huannvictor',
-        twitter: 'maykbrito'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const site = li.getAttribute('class')
-          const social = li.children[0].href = `https://www.${site}.com/${userSocialMedias[site]}`
-          console.log(social)
-        }
-      }
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
