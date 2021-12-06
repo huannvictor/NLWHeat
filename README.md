@@ -25,7 +25,7 @@ Mais abaixo mais informações sobre o projeto e no finalzinho desse README, alg
 
 ## Github pages
 
-Hospedado no githubpages para possibilitar o compartilhamento on line
+Hospedado no githubpages para possibilitar o compartilhamento online
 
 ## Links
 
